@@ -3,8 +3,8 @@ require "language/node"
 class GitJump < Formula
   desc "Git branches helper: interactive UI and fuzzy-serach for Git branches"
   homepage "https://github.com/mykolaharmash/git-jump"
-  url "https://registry.npmjs.org/git-jump/-/git-jump-0.1.9.tgz"
-  sha256 "01b279d6efe4a67a432efb271741b65897912739bbef4a19a766bb7f7fab616d"
+  url "https://registry.npmjs.org/git-jump/-/git-jump-0.1.10.tgz"
+  sha256 "7e1bb39c4b885c74bc03d39cc75a39b8a3c5d196383455fa5e0fa7ca61509089"
   license "MIT"
 
   depends_on "node"
