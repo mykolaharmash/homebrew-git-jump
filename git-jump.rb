@@ -12,8 +12,11 @@ class GitJump < Formula
   def install
     system "npm", "install", *Language::Node.std_npm_install_args(libexec)
 
-    system "touch", "homebrew"
-    
+    # Add flag that git-jump was install using Homebrew.
+    # This is used to show user command for updating
+    # the package when new version is available.
+    FileUtils.touch "#{libexec}/lib/node_modules/git-jump/homebrew"
+
     bin.install_symlink "#{libexec}/bin/git-jump"
     man1.install "git-jump.1"
   end
