@@ -12,6 +12,8 @@ class GitJump < Formula
   def install
     system "npm", "install", *Language::Node.std_npm_install_args(libexec)
 
+    system "touch", "homebrew"
+    
     bin.install_symlink "#{libexec}/bin/git-jump"
     man1.install "git-jump.1"
   end
